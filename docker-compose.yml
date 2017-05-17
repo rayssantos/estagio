@@ -36,3 +36,11 @@ services:
             - ./data:/var/lib/mysql
         ports:
             - "3306:3306"
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        environment:
+            - TERM=xterm
+            - MYSQL_ROOT_PASSWORD=32130
+            - PMA_HOST=mariadb
+        ports:
+            - "80:80"
