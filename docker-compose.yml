@@ -15,6 +15,7 @@ services:
             - "81:80" # WEB
         links:
             - php
+            - mariadb
     php:
         image: tuxmate/php:5.5.9
         tty: true
@@ -25,3 +26,13 @@ services:
             - ./docker/php/php.ini:/etc/php5/fpm/php.ini
             - .:/estagio
             - ./docker/php/index.php:/estagio/index.php
+    mariadb:
+        image: mariadb:10.1.18
+        environment:
+            - TERM=xterm
+            - MYSQL_ROOT_PASSWORD=32130
+            - MYSQL_DATABASE=usuario
+        volumes:
+            - ./data:/var/lib/mysql
+        ports:
+            - "3306:3306"
