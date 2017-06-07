@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sistema Bibliotecario</title>
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div id="app" class="container-fluid">
+            <h1> Cadastro de Autores</h1>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label></label>
+                        <form data-bind="submit: add">
+
+                        <!--o data biding é responsavel por comportamentos interativos passado pelo value, referenciado pela variavel observavel que no index js eu declarei personName-->
+                        Nome: <input class="form-control input-s" data-bind="value: nomeAutor"><br>
+                        Gênero: <input class="form-control input-s" data-bind="value: generoAutor"><br>
+                        Data de Nascimento: <input type="date" class="form-control input-s" data-bind="value: dataNasc">
+                       <!--  <p>
+                        Name:
+                        <b data-bind="visible: !editing(), text: name, click: edit">&nbsp;</b>
+                        <input data-bind="visible: editing, value: name, hasFocus: editing" />
+                        </p>
+                        <p><em>Click the name to edit it; click elsewhere to apply changes.</em></p>
+ -->
+                         <!--aqui é a caixa de texto onde eu vou colocar o valor posso usar varios mas com apenas um data-->
+                        </div>
+
+                       <!-- O binding click é quase a mesma coisa, mas ele gera o comportamento quando o botão é clicado-->
+                   <button type="submit" class="btn btn-info btn-sm pull-right">Cadastrar</button>
+                   </form>
+                   <!--aqui é o botão cadastrar-->
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Dados
+                        </div>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Nome</th>
+                                <th>Data de Nascimento</th>
+                                <th>Gênero</th>
+                                <th>Ações</th>
+                              </tr>
+                            </thead>
+                            <tbody data-bind="foreach: autor">
+                              <tr>
+                                <td data-bind="text: nome"></td>
+                                <td data-bind="text: dataNasc"></td>
+                                <td data-bind="text: generoAutor"></td>
+                                <td><button data-bind="click: $root.excluir">X</button></td>
+                                <td><button data-bind= "click: $root.editing">edit</button>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/vendor/Jquery/jquery.js"></script>
+        <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/vendor/knockout/knockout.js"></script>
+        <script type="text/javascript" src="assets/vendor/moment/moment.min.js"></script>
+        <script type="text/javascript" src="assets/js/autores.js"></script>
+    </body>
+</html>

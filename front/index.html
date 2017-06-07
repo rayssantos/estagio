@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Projeto Frontend</title>
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div id="app" class="container-fluid">
+            <h1>Hello World</h1>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Nome da Pessoa</label>
+                        <!--o data biding é responsavel por comportamentos interativos passado pelo value, referenciado pela variavel observavel que no index js eu declarei personName-->
+                        <input class="form-control input-s" data-bind="value: personName, event:{keyup: enter}"> <!--aqui é a caixa de texto onde eu vou colocar o valor posso usar varios mas com apenas um data-->
+                        </div>
+                       <!-- O binding click é quase a mesma coisa, mas ele gera o comportamento quando o botão é clicado-->
+                   <button class="btn btn-info btn-sm pull-right" data-bind="click: addPerson">Cadastrar</button><!--aqui é o botão cadastrar-->
+                   <!--<div data-bind="event keyup: addPerson">-->
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            PESSOAS CADASTRADAS
+                        </div>
+                        <div class="panel-body">
+                            <ul data-bind="foreach: people"><!--esse laço de repetiçao foi criado para pegar e mostrar todos da lista-->
+                                <li> <span data-bind="text: name"></span></li><!--mostra os nomes -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/vendor/Jquery/jquery.js"></script>
+        <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/vendor/knockout/knockout.js"></script>
+        <script type="text/javascript" src="assets/js/index.js"></script>
+    </body>
+</html>
