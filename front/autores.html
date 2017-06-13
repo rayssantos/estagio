@@ -4,8 +4,16 @@
         <meta charset="utf-8">
         <title>Sistema Bibliotecario</title>
         <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+    <ul class="nav nav-pills"> <li role="presentation" class="active"><a href="index.html">Inicio</a>
+    </li> <li role="presentation"><a href="autores.html">Autores</a>
+    </li> <li role="presentation"><a href="livros.html">Livros</a>
+    </li><li role="presentation"><a href="alunos.html">Alunos</a>
+    </li><li role="presentation"><a href="#">Emprestimos</a>
+    </li><li role="presentation"><a href="#">Funcionários</a>
+    </li> <li role="presentation"><a href="#">Biblioteca</a></li> </ul>
         <div id="app" class="container-fluid">
             <h1> Cadastro de Autores</h1>
 
@@ -13,26 +21,15 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label></label>
-                        <form data-bind="submit: add">
 
                         <!--o data biding é responsavel por comportamentos interativos passado pelo value, referenciado pela variavel observavel que no index js eu declarei personName-->
-                        Nome: <input class="form-control input-s" data-bind="value: nomeAutor"><br>
-                        Gênero: <input class="form-control input-s" data-bind="value: generoAutor"><br>
-                        Data de Nascimento: <input type="date" class="form-control input-s" data-bind="value: dataNasc">
-                       <!--  <p>
-                        Name:
-                        <b data-bind="visible: !editing(), text: name, click: edit">&nbsp;</b>
-                        <input data-bind="visible: editing, value: name, hasFocus: editing" />
-                        </p>
-                        <p><em>Click the name to edit it; click elsewhere to apply changes.</em></p>
- -->
-                         <!--aqui é a caixa de texto onde eu vou colocar o valor posso usar varios mas com apenas um data-->
+                        <form data-bind="submit: add">
+                        <b>Nome:</b> <input class="form-control input-s" data-bind="value: nomeAutor"><br>
+                        <b>Gênero Literário:</b> <input class="form-control input-s" data-bind="value: generoAutor"><br>
+                        <b>Data de Nascimento:</b> <input type="date" class="form-control input-s" data-bind="value: dataNasc">
                         </div>
-
-                       <!-- O binding click é quase a mesma coisa, mas ele gera o comportamento quando o botão é clicado-->
-                   <button type="submit" class="btn btn-info btn-sm pull-right">Cadastrar</button>
+                   <button type="submit" class="btn btn-info btn-sm pull-right">Cadastrar</button><!--aqui é o botão cadastrar-->
                    </form>
-                   <!--aqui é o botão cadastrar-->
                 </div>
             </div>
             <br>
@@ -48,16 +45,38 @@
                                 <th>Nome</th>
                                 <th>Data de Nascimento</th>
                                 <th>Gênero</th>
-                                <th>Ações</th>
+                                <th>Excluir</th>
+                                <th>Editar</th>
                               </tr>
                             </thead>
                             <tbody data-bind="foreach: autor">
                               <tr>
-                                <td data-bind="text: nome"></td>
-                                <td data-bind="text: dataNasc"></td>
-                                <td data-bind="text: generoAutor"></td>
-                                <td><button data-bind="click: $root.excluir">X</button></td>
-                                <td><button data-bind= "click: $root.editing">edit</button>
+                                <td data-bind="click: $parent.editRow">
+                                    <div data-bind="ifnot: editing">
+                                        <span data-bind="text: nome"></span>
+                                    </div>
+                                    <div data-bind="if: editing">
+                                        <input type="text" class="form-control input-s" data-bind= "value: nome"> <!--ifnot é um bind do nocaut-->
+                                    </div>
+                                </td>
+                                <td data-bind="click: $parent.editRow">
+                                    <div data-bind="ifnot: editing">
+                                        <span data-bind="text: dataNasc"></span>
+                                    </div>
+                                    <div data-bind="if: editing">
+                                        <input type="text" class="form-control input-s" data-bind= "value: dataNasc"> <!--ifnot é um bind do nocaut-->
+                                    </div>
+                                </td>
+                                <td data-bind="click: $parent.editRow">
+                                    <div data-bind="ifnot: editing">
+                                        <span data-bind="text: generoAutor"></span>
+                                    </div>
+                                    <div data-bind="if: editing">
+                                        <input type="text" class="form-control input-s" data-bind= "value: generoAutor"> <!--ifnot é um bind do nocaut-->
+                                    </div>
+                                </td>
+                                <td><i class="glyphicon glyphicon-remove" data-bind="click: $root.excluir"></i></td> <!-- O binding click é quase a mesma coisa, mas ele gera o comportamento quando o botão é clicado-->
+                                <td><i class="glyphicon glyphicon-edit" data-bind= "click: $parent.editar"></i></td>
                               </tr>
                             </tbody>
                         </table>

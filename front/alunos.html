@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sistema Bibliotecario</title>
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+    <ul class="nav nav-pills"> <li role="presentation" class="active"><a href="index.html">Inicio</a>
+    </li> <li role="presentation"><a href="autores.html">Autores</a>
+    </li> <li role="presentation"><a href="livros.html">Livros</a>
+    </li><li role="presentation"><a href="alunos.html">Alunos</a>
+    </li><li role="presentation"><a href="#">Emprestimos</a>
+    </li><li role="presentation"><a href="#">Funcionários</a>
+    </li> <li role="presentation"><a href="#">Biblioteca</a></li> </ul>
+        <div id="app" class="container-fluid">
+            <h1> Cadastro de Alunos</h1>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label></label>
+
+                        <!--o data biding é responsavel por comportamentos interativos passado pelo value, referenciado pela variavel observavel que no index js eu declarei personName-->
+                        <form data-bind="submit: add">
+                      <!--   N° Matricula: <input class="form-control input-s" data-bind="value: matriculaAluno"><br> -->
+                        Nome do Aluno: <input class="form-control input-s" data-bind="value: idNome"><br>
+                        Código do Livro: <input class="form-control input-s" data-bind="value: Livros_Livrosid">
+                        </div>
+                   <button type="submit" class="btn btn-info btn-sm pull-right">Cadastrar</button><!--aqui é o botão cadastrar-->
+                   </form>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Dados
+                        </div>
+                        <table class="table">
+                            <thead>
+                              <tr>
+
+                                <th>idNome do Aluno</th>
+                                <th>Código do Livro</th>
+                                <th>Excluir</th>
+                                <th>Editar</th>
+                              </tr>
+                            </thead>
+                            <tbody data-bind="foreach: alunos">
+                              <tr>
+                                <td data-bind="click: $parent.editRow">
+                                    <div data-bind="ifnot: editing">
+                                        <span data-bind="text: idNome"></span>
+                                    </div>
+                                    <div data-bind="if: editing">
+                                        <input type="text" class="form-control input-s" data-bind= "value: idNome"> <!--ifnot é um bind do nocaut-->
+                                    </div>
+                                </td>
+                                <td data-bind="click: $parent.editRow">
+                                    <div data-bind="ifnot: editing">
+                                        <span data-bind="text: Livros_Livrosid"></span>
+                                    </div>
+                                    <div data-bind="if: editing">
+                                        <input type="text" class="form-control input-s" data-bind= "value: Livros_Livrosid"> <!--ifnot é um bind do nocaut-->
+                                    </div>
+                                </td>
+                                <td><i class="glyphicon glyphicon-remove" data-bind="click: $root.excluir"></i></td> <!-- O binding click é quase a mesma coisa, mas ele gera o comportamento quando o botão é clicado-->
+                                <td><i class="glyphicon glyphicon-edit" data-bind= "click: $parent.editar"></i></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/vendor/Jquery/jquery.js"></script>
+        <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/vendor/knockout/knockout.js"></script>
+        <script type="text/javascript" src="assets/vendor/moment/moment.min.js"></script>
+        <script type="text/javascript" src="assets/js/alunos.js"></script>
+    </body>
+</html>

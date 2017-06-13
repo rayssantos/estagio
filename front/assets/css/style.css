@@ -1,0 +1,14 @@
+i{
+    cursor:pointer;
+}
+body{
+    background-color: #E6E6FA;
+
+h1{
+   color: white;
+   font-family: 'Roboto', sans-serif;
+}
+.nav>li>a{
+    padding:15px 25px;
+}
+

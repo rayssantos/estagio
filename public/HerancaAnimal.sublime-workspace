@@ -1,0 +1,329 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"nome",
+				"nomeAutor"
+			],
+			[
+				"o",
+				"observable"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"idB",
+				"idBiblio"
+			],
+			[
+				"alunos",
+				"alunos"
+			],
+			[
+				"idA",
+				"idate"
+			],
+			[
+				"autor",
+				"autor"
+			],
+			[
+				"alun",
+				"alunos"
+			],
+			[
+				"ma",
+				"matriculaAluno"
+			],
+			[
+				"idName",
+				"bcompiler_write_included_filename"
+			],
+			[
+				"aluno",
+				"aluno"
+			],
+			[
+				"Alunos",
+				"Alunos"
+			],
+			[
+				"livro",
+				"livro"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"autores",
+				"autores"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ca",
+				"cachorro"
+			],
+			[
+				"obj",
+				"objectDog"
+			],
+			[
+				"cor",
+				"corPelo"
+			],
+			[
+				"ob",
+				"objectRaca"
+			],
+			[
+				"obje",
+				"objectRaca"
+			],
+			[
+				"p",
+				"php\t<?php … ?>"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 132.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 308.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rayssa/Downloads/controller.js",
+		"/home/rayssa/Downloads/controller.txt",
+		"/home/rayssa/estagio/front/assets/js/index.js",
+		"/home/rayssa/estagio/front/index.html",
+		"/home/rayssa/Downloads/index.html",
+		"/home/rayssa/estagio/front/assets/vendor/knockout/knockout.js",
+		"/home/rayssa/estagio/front/assets/index.html",
+		"/home/rayssa/estagio/front/assets/front.js",
+		"/home/rayssa/estagio/front/assets/front.css",
+		"/home/rayssa/estagio/front/untitled",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/controllers/AlunosController.php",
+		"/home/rayssa/.config/sublime-text-3/Packages/User/phpcs.sublime-settings",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/controllers/BibliotecaController.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/models/Funcionario.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/routes/collections/funcionario.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/controllers/FuncionarioController.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/routes/collections/emprestimo.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/routes/collections/autor.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/routes/collections/alunos.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/routes/collections/biblioteca.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/models/Biblioteca.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/models/Emprestimos.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/controllers/LivrosController.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/controllers/AutorController.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/controllers/EmprestimosController.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/models/Alunos.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/users/models/Phones.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/routes/collections/livros.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/users/controllers/PhonesController.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/routes/collections/Users.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/users/controllers/UsersController.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/models/Autor.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/biblioteca/models/Livros.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/routes/collections/Phones.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/models/BaseModel.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/configs/.env",
+		"/home/rayssa/as-capacita-phalcon-api/public/index.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/namespaces.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/routes/routeLoader.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/traits/Sql.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/controllers/RESTController.php",
+		"/home/rayssa/as-capacita-phalcon-api/app/modules/users/models/Users.php",
+		"/home/rayssa/as-capacita-phalcon-api/public/routes/collections/livro.php",
+		"/home/rayssa/estagio/public/projeto.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"setData",
+			"getConditions",
+			"join",
+			"jonn",
+			"strNome",
+			"protected",
+			"public",
+			"private",
+			"msg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "HerancaAnimal.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"index",
+				"public/index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/estagio/front/front.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 256.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

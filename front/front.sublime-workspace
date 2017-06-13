@@ -4,6 +4,74 @@
 		"selected_items":
 		[
 			[
+				"Li",
+				"Livros_Livrosid"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"li",
+				"livros"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"aut",
+				"Autor_idAutor"
+			],
+			[
+				"Au",
+				"Autor_idAutor"
+			],
+			[
+				"Livros",
+				"idLivros"
+			],
+			[
+				"id",
+				"Autor_idAutor"
+			],
+			[
+				"AU",
+				"Autor_idAutor"
+			],
+			[
+				"bg",
+				"background"
+			],
+			[
+				"e",
+				"excluir"
+			],
+			[
+				"ge",
+				"generoAutor"
+			],
+			[
+				"G",
+				"generoAutor"
+			],
+			[
+				"ob",
+				"objAutor"
+			],
+			[
+				"k",
+				"knockout"
+			],
+			[
+				"PERSO",
+				"person"
+			],
+			[
+				"edi",
+				"editing"
+			],
+			[
 				"data",
 				"dataNasc"
 			],
@@ -96,10 +164,6 @@
 				"corPelo"
 			],
 			[
-				"ob",
-				"objectRaca"
-			],
-			[
 				"obje",
 				"objectRaca"
 			],
@@ -112,45 +176,19 @@
 	"buffers":
 	[
 		{
-			"file": "assets/js/autores.js",
+			"file": "assets/js/alunos.js",
 			"settings":
 			{
-				"buffer_size": 2023,
+				"buffer_size": 2499,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/rayssa/.config/sublime-text-3/Packages/User/snippets/console.log.sublime-snippet",
+			"file": "assets/js/livros.js",
 			"settings":
 			{
-				"buffer_size": 296,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "autores.html",
-			"settings":
-			{
-				"buffer_size": 3317,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<div class=\"panel panel-default\">\n                        <div class=\"panel-heading\">\n                            AUTORES CADASTRADOS\n                        </div>\n                        <div class=\"panel-body\">\n                            <ul data-bind=\"foreach: autor\"><!--esse laço de repetiçao foi criado para pegar e mostrar todos da lista-->\n                            <ul>\n                                <li><span data-bind=\"text: nome\"></span><button data-bind=\"click: $parent.excluir\">X</button></li> <!--mostra os nomes -->\n                            </ul>\n                        </div>\n                    </div>",
-			"settings":
-			{
-				"buffer_size": 629,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 2348,
+				"buffer_size": 2511,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -163,7 +201,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 292.0,
+		"height": 372.0,
 		"last_filter": "",
 		"selected_items":
 		[
@@ -199,15 +237,37 @@
 		"/home/rayssa/estagio",
 		"/home/rayssa/estagio/front",
 		"/home/rayssa/estagio/front/assets",
-		"/home/rayssa/estagio/front/assets/js"
+		"/home/rayssa/estagio/front/assets/css",
+		"/home/rayssa/estagio/front/assets/js",
+		"/home/rayssa/estagio/front/assets/vendor",
+		"/home/rayssa/estagio/front/assets/vendor/knockout",
+		"/home/rayssa/estagio/front/assets/vendor/moment"
 	],
 	"file_history":
 	[
+		"/home/rayssa/estagio/front/livros.html",
+		"/home/rayssa/Desktop/autores.html",
+		"/home/rayssa/Desktop/autores.js",
+		"/home/rayssa/estagio/front/assets/js/livros.js",
+		"/home/rayssa/Desktop/alunos.html",
+		"/home/rayssa/estagio/front/assets/js/alunos.js",
+		"/home/rayssa/Desktop/alunos.js",
+		"/home/rayssa/estagio/docker-compose.yml",
+		"/home/rayssa/estagio/front/assets/css/style.css",
+		"/home/rayssa/estagio/front/index.html",
+		"/home/rayssa/estagio/front/autores.html",
+		"/home/rayssa/estagio/front/alunos.html",
+		"/home/rayssa/estagio/docker/nginx/front.conf",
+		"/home/rayssa/estagio/front/assets/vendor/index2.html",
+		"/home/rayssa/estagio/front/assets/livros.html",
+		"/home/rayssa/estagio/front/assets/vendor/livros.html",
+		"/home/rayssa/.config/sublime-text-3/Packages/User/snippets/console.log.sublime-snippet",
+		"/home/rayssa/estagio/front/livros.js",
+		"/home/rayssa/estagio/front/assets/js/autores.js",
 		"/home/rayssa/estagio/front/table.html",
 		"/home/rayssa/Downloads/controller.js",
 		"/home/rayssa/Downloads/controller.txt",
 		"/home/rayssa/estagio/front/assets/js/index.js",
-		"/home/rayssa/estagio/front/index.html",
 		"/home/rayssa/Downloads/index.html",
 		"/home/rayssa/estagio/front/assets/vendor/knockout/knockout.js",
 		"/home/rayssa/estagio/front/assets/index.html",
@@ -265,6 +325,33 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"set",
+			"Autor_idAutor",
+			"new id",
+			"new",
+			"idAutor",
+			"foreach",
+			"editing",
+			"});\n",
+			"if",
+			"ifnot",
+			"alunos",
+			"autor",
+			"nomeAutor",
+			"nome",
+			"autor",
+			"idNome",
+			"nome",
+			"livros",
+			"estagio",
+			"dataNasc",
+			"nome",
+			"nomeAutor",
+			"dataNasc",
+			"idAutor",
+			"objAutor",
+			"person",
+			"editar",
 			": nome",
 			"add",
 			"nomeAutor",
@@ -278,7 +365,7 @@
 			"private",
 			"msg"
 		],
-		"highlight": true,
+		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
@@ -294,24 +381,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/js/autores.js",
+					"file": "assets/js/alunos.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2023,
+						"buffer_size": 2499,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1127,
-								1161
+								2322,
+								2322
 							]
 						],
 						"settings":
@@ -321,130 +408,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/rayssa/.config/sublime-text-3/Packages/User/snippets/console.log.sublime-snippet",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 296,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								56,
-								56
-							]
-						],
-						"settings":
-						{
-							"default_extension": "sublime-snippet",
-							"syntax": "Packages/XML/XML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "autores.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3317,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2657,
-								2657
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 483.0,
+						"translation.y": 1035.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
+					"file": "assets/js/livros.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 629,
+						"buffer_size": 2511,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								213,
-								213
+								2348,
+								2348
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 78.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2348,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								861,
-								861
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
 						"translation.x": 0.0,
-						"translation.y": 45.0,
+						"translation.y": 945.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -534,7 +531,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 256.0,
 	"status_bar_visible": true,
 	"template_settings":
