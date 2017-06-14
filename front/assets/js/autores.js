@@ -13,7 +13,7 @@ function Autor(objAutor) {
     if (editing === false){
       $.ajax({
         type: 'PUT',
-        url: 'http://localhost:81/v1/autores/' + self.idAutor(), // ele pega o id pela rota, por isso nao preciso declarar ali em baixo
+        url: window.global.urlapi + '/v1/autores/' + self.idAutor(), // ele pega o id pela rota, por isso nao preciso declarar ali em baixo
         data:{
           nome: self.nome(),
           dataNasc: self.dataNasc(),
@@ -53,7 +53,7 @@ function AppViewModel() {
   self.excluir = function(person){
     $.ajax({
       type: 'DELETE',
-      url: 'http://localhost:81/v1/autores/' + person.idAutor(),
+      url: window.global.urlapi + '/v1/autores/' + person.idAutor(),
       success: function(result){
         if(!!result.records.success){
           return self.autor.remove(person);
@@ -79,7 +79,7 @@ function AppViewModel() {
   };
 
   $.ajax({
-    url: 'http://localhost:81/v1/autores',
+    url: window.global.urlapi + '/v1/autores',
     type: 'GET',
     success: function(result){
       self.setData(result.records)
@@ -90,16 +90,16 @@ function AppViewModel() {
 
   self.add = function(){
     $.ajax({
-      url: 'http://localhost:81/v1/autores',
+      url: window.global.urlapi + '/v1/autores',
       type: 'POST',
       data:{
-        nome: self.nome(),
+        nome: self.nomeAutor(),
         generoAutor: self.generoAutor(),
         dataNasc: self.dataNasc()
       },
       success: function(inserir){
         self.autor.push(new Autor(inserir.records));
-        self.nome('');
+        self.nomeAutor('');
 
       }
     });

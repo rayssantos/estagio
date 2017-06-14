@@ -4,18 +4,19 @@
         <meta charset="utf-8">
         <title>Sistema Bibliotecario</title>
         <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="/assets/vendor/bootstrap/css/style.css">
+
     </head>
     <body>
     <ul class="nav nav-pills"> <li role="presentation" class="active"><a href="index.html">Inicio</a>
     </li> <li role="presentation"><a href="autores.html">Autores</a>
     </li> <li role="presentation"><a href="livros.html">Livros</a>
     </li><li role="presentation"><a href="alunos.html">Alunos</a>
-    </li><li role="presentation"><a href="#">Emprestimos</a>
+    </li><li role="presentation"><a href="emprestimo.html">Emprestimos</a>
     </li><li role="presentation"><a href="#">Funcionários</a>
     </li> <li role="presentation"><a href="#">Biblioteca</a></li> </ul>
         <div id="app" class="container-fluid">
-            <h1> Cadastro de Alunos</h1>
+            <h1>Cadastro de Emprestimos</h1>
 
             <div class="row">
                 <div class="col-md-12">
@@ -25,8 +26,31 @@
                         <!--o data biding é responsavel por comportamentos interativos passado pelo value, referenciado pela variavel observavel que no index js eu declarei personName-->
                         <form data-bind="submit: add">
                       <!--   N° Matricula: <input class="form-control input-s" data-bind="value: matriculaAluno"><br> -->
-                        Nome do Aluno: <input class="form-control input-s" data-bind="value: idNome"><br>
-                        Código do Livro: <input class="form-control input-s" data-bind="value: Livros_Livrosid">
+
+                        <div class="form-group">
+                                <label for="sel1">Matricula do Aluno:</label>
+                                <select class="form-control" id="sel1" name="carlist" data-bind= "options: emprestimos, optionsText: 'nomeAutor', optionsValue: 'Aluno_idAluno', value: Aluno_idAluno, optionsCaption: 'Selecione um aluno'">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                </select>
+
+                            </select><br>
+
+                        Data de Emprestimo: <input type="date" class="form-control input-s" data-bind="value: dataEmprestimo"><br>
+
+                        <div class="form-group">
+                                <label for="sel1">Código do Livro:</label>
+                                <select class="form-control" id="sel1" name="carlist" data-bind= "options: emprestimos, optionsText: 'nomeAutor', optionsValue: 'Aluno_idAluno', value: Aluno_idAluno, optionsCaption: 'Selecione um aluno'">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                </select>
+
+                            </select><br>
+                        Nome do Funcionário: <input class="form-control input-s" data-bind="value: id_uncionario">
                         </div>
                    <button type="submit" class="btn btn-info btn-sm pull-right">Cadastrar</button><!--aqui é o botão cadastrar-->
                    </form>
@@ -43,20 +67,41 @@
                             <thead>
                               <tr>
 
-                                <th>idNome do Aluno</th>
+
+                                <th>Matricula do Aluno</th>
+                                <th>Data de Emprestimo</th>
                                 <th>Código do Livro</th>
+                                <th>Nome do Funcionário</th>
                                 <th>Excluir</th>
-                                <th>Editar</th>
+                                <th>Editar<th>
                               </tr>
                             </thead>
                             <tbody data-bind="foreach: alunos">
                               <tr>
+
+
                                 <td data-bind="click: $parent.editRow">
                                     <div data-bind="ifnot: editing">
-                                        <span data-bind="text: idNome"></span>
+                                        <span data-bind="text: Aluno_idAluno"></span>
                                     </div>
                                     <div data-bind="if: editing">
-                                        <input type="text" class="form-control input-s" data-bind= "value: idNome"> <!--ifnot é um bind do nocaut-->
+                                        <input type="text" class="form-control input-s" data-bind= "value: Aluno_idAluno"> <!--ifnot é um bind do nocaut-->
+                                    </div>
+                                </td>
+                                <td data-bind="click: $parent.editRow">
+                                    <div data-bind="ifnot: editing">
+                                        <span data-bind="text: dataEmprestimo"></span>
+                                    </div>
+                                    <div data-bind="if: editing">
+                                        <input type="data" class="form-control input-s" data-bind= "value: dataEmprestimo"> <!--ifnot é um bind do nocaut-->
+                                    </div>
+                                </td>
+                                <td data-bind="click: $parent.editRow">
+                                    <div data-bind="ifnot: editing">
+                                        <span data-bind="text: Livros_Livrosid"></span>
+                                    </div>
+                                    <div data-bind="if: editing">
+                                        <input type="text" class="form-control input-s" data-bind= "value: Livros_Livrosid"> <!--ifnot é um bind do nocaut-->
                                     </div>
                                 </td>
                                 <td data-bind="click: $parent.editRow">
@@ -76,10 +121,11 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="assets/js/globals.js"></script>
         <script type="text/javascript" src="assets/vendor/Jquery/jquery.js"></script>
         <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/vendor/knockout/knockout.js"></script>
         <script type="text/javascript" src="assets/vendor/moment/moment.min.js"></script>
-        <script type="text/javascript" src="assets/js/alunos.js"></script>
+        <script type="text/javascript" src="assets/js/emprestimo.js"></script>
     </body>
 </html>

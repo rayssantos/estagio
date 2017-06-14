@@ -27,7 +27,7 @@ function AppViewModel() {
     }
 
      $.ajax({
-    url: 'http://localhost:81/v1/users',
+    url:  window.global.urlapi +'/81/v1/users',
     type: 'GET',
     success: function(result){
       console.log(result);

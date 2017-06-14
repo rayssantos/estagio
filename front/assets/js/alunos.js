@@ -13,7 +13,7 @@ function Alunos(objAlunos) {
     if (editing === false){
       $.ajax({
         type: 'PUT',
-        url: 'http://localhost:81/v1/alunos/' + self.matriculaAluno(), // ele pega o id pela rota, por isso nao preciso declarar ali em baixo
+        url: window.global.urlapi + '/v1/alunos/' + self.matriculaAluno(), // ele pega o id pela rota, por isso nao preciso declarar ali em baixo
         data:{
           idNome: self.idNome(),
           Livros_Livrosid: self.Livros_Livrosid(),
@@ -45,7 +45,7 @@ function AppViewModel() {
   self.excluir = function(person){
     $.ajax({
       type: 'DELETE',
-      url: 'http://localhost:81/v1/alunos/' + person.matriculaAluno(),
+      url: window.global.urlapi + '/v1/alunos/' + person.matriculaAluno(),
       success: function(result){
         if(!!result.records.success){
           return self.alunos.remove(person);
@@ -71,7 +71,7 @@ function AppViewModel() {
   };
 
   $.ajax({
-    url: 'http://localhost:81/v1/alunos',
+    url: window.global.urlapi + '/v1/alunos',
     type: 'GET',
     success: function(result){
       self.setData(result.records);
@@ -82,7 +82,7 @@ function AppViewModel() {
 
   self.add = function(){
     $.ajax({
-      url: 'http://localhost:81/v1/alunos',
+      url: window.global.urlapi + '/v1/alunos',
       type: 'POST',
       data:{
         idNome: self.idNome(),

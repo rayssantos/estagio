@@ -1,0 +1,23 @@
+i{
+    cursor:pointer;
+}
+body{
+
+    background-image: url(https://www.reab.me/wp-content/uploads/2016/06/books-484766_1280.jpg);
+    background-size: 100%;
+
+}
+
+h1{
+   color: steelblue;
+   font-family: 'Roboto', sans-serif;
+   font-size:350%;
+}
+.form-control{
+    background-color: rgba(40, 96, 144, 0.16);;
+    width: 50%
+}
+
+.panel{
+    background-color: rgba(40, 96, 144, 0.16);
+}

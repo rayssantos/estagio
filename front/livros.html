@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <title>Sistema Bibliotecario</title>
         <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/style.css">
     </head>
     <body>
     <ul class="nav nav-pills"> <li role="presentation" class="active"><a href="index.html">Inicio</a>
     </li> <li role="presentation"><a href="autores.html">Autores</a>
     </li> <li role="presentation"><a href="livros.html">Livros</a>
     </li><li role="presentation"><a href="alunos.html">Alunos</a>
-    </li><li role="presentation"><a href="#">Emprestimos</a>
+    </li><li role="presentation"><a href="emprestimo.html">Emprestimos</a>
     </li><li role="presentation"><a href="#">Funcionários</a>
     </li> <li role="presentation"><a href="#">Biblioteca</a></li>
     </ul>
@@ -24,14 +24,23 @@
                         <label></label>
 
                         <!--o data biding é responsavel por comportamentos interativos passado pelo value, referenciado pela variavel observavel que no index js eu declarei personName-->
-                        <form data-bind="submit: add">
+                        <form>
                             <!-- Autor do Livro: <input class="form-control input-s" data-bind="value: Autor_idAutor"><br> -->
-                            Autor do livro:
-                            <select name="carlist" form="carform" data-bind= "options: autores, optionsText: 'nome', optionsValue: 'idAutor', value: Autor_idAutor, optionsCaption: 'Selecione um autor'">
-                            </select>
 
-                            Titulo do Livro: <input class="form-control input-s" data-bind="value: titulo"><br>
-                            <button type="submit" class="btn btn-info btn-sm pull-right">Cadastrar</button><!--aqui é o botão cadastrar-->
+                            <div class="form-group">
+                                <label for="sel1">Autor do livro:</label>
+                                <select class="form-control" id="sel1" name="carlist" data-bind= "options: autores, optionsText: 'nomeAutor', optionsValue: 'idAutor', value: Autor_idAutor, optionsCaption: 'Selecione um autor'">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                </select>
+
+                            </select>
+                            <br>
+
+                            <b>Titulo do Livro:</b> <input class="form-control input-s" data-bind="value: titulo"><br>
+                            <button data-bind="click: add" class="btn btn-info btn-sm pull-right">Cadastrar</button><!--aqui é o botão cadastrar-->
                         </form>
                     </div>
                 </div>
@@ -56,7 +65,7 @@
                               <tr>
                                 <td data-bind="click: $parent.editRow">
                                     <div data-bind="ifnot: editing">
-                                        <span data-bind="text: $parent.nome"></span>
+                                        <span data-bind="text: nome"></span>
                                     </div>
                                     <div data-bind="if: editing">
                                          <input type="text" class="form-control input-s" data-bind= "value: nome"> <!--ifnot é um bind do nocaut -->
@@ -79,6 +88,7 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="assets/js/globals.js"></script>
         <script type="text/javascript" src="assets/vendor/Jquery/jquery.js"></script>
         <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/vendor/knockout/knockout.js"></script>

@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"sec",
+				"secSearch"
+			],
+			[
+				"au",
+				"Autor_idAutor"
+			],
+			[
+				"aut",
+				"autores"
+			],
+			[
+				"se",
+				"secSearch"
+			],
+			[
+				"autor",
+				"Autor_idAutor"
+			],
+			[
+				"re",
+				"records"
+			],
+			[
+				"ob",
+				"objLivro"
+			],
+			[
+				"id",
+				"idAutor"
+			],
+			[
+				"ur",
+				"url"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"auto",
+				"autores"
+			],
+			[
+				"LI",
+				"Livro_idLivro"
+			],
+			[
+				"l",
+				"log\tconsole.log"
+			],
+			[
 				"Li",
 				"Livros_Livrosid"
 			],
@@ -20,20 +76,12 @@
 				"background-image"
 			],
 			[
-				"aut",
-				"Autor_idAutor"
-			],
-			[
 				"Au",
 				"Autor_idAutor"
 			],
 			[
 				"Livros",
 				"idLivros"
-			],
-			[
-				"id",
-				"Autor_idAutor"
 			],
 			[
 				"AU",
@@ -54,10 +102,6 @@
 			[
 				"G",
 				"generoAutor"
-			],
-			[
-				"ob",
-				"objAutor"
 			],
 			[
 				"k",
@@ -102,10 +146,6 @@
 			[
 				"idA",
 				"idate"
-			],
-			[
-				"autor",
-				"autor"
 			],
 			[
 				"alun",
@@ -176,19 +216,19 @@
 	"buffers":
 	[
 		{
-			"file": "assets/js/alunos.js",
+			"file": "assets/js/livros.js",
 			"settings":
 			{
-				"buffer_size": 2499,
+				"buffer_size": 3524,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/js/livros.js",
+			"file": "livros.html",
 			"settings":
 			{
-				"buffer_size": 2511,
+				"buffer_size": 5364,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -201,10 +241,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 372.0,
-		"last_filter": "",
+		"height": 172.0,
+		"last_filter": "htl",
 		"selected_items":
 		[
+			[
+				"htl",
+				"Set Syntax: HTML (Tcl)"
+			],
 			[
 				"Package Control: ins",
 				"Package Control: Install Package"
@@ -214,7 +258,7 @@
 				"Install Package Control"
 			]
 		],
-		"width": 467.0
+		"width": 485.0
 	},
 	"console":
 	{
@@ -236,38 +280,42 @@
 	[
 		"/home/rayssa/estagio",
 		"/home/rayssa/estagio/front",
-		"/home/rayssa/estagio/front/assets",
-		"/home/rayssa/estagio/front/assets/css",
-		"/home/rayssa/estagio/front/assets/js",
 		"/home/rayssa/estagio/front/assets/vendor",
+		"/home/rayssa/estagio/front/assets/vendor/bootstrap",
+		"/home/rayssa/estagio/front/assets/vendor/bootstrap/css",
 		"/home/rayssa/estagio/front/assets/vendor/knockout",
 		"/home/rayssa/estagio/front/assets/vendor/moment"
 	],
 	"file_history":
 	[
+		"/home/rayssa/estagio/front/assets/js/index.js",
+		"/home/rayssa/estagio/front/assets/js/globals.js",
+		"/home/rayssa/estagio/front/emprestimo.html",
+		"/home/rayssa/estagio/front/autores.html",
+		"/home/rayssa/estagio/front/assets/js/autores.js",
+		"/home/rayssa/estagio/front/alunos.html",
+		"/home/rayssa/estagio/front/assets/vendor/bootstrap/css/style.css",
+		"/home/rayssa/estagio/front/index.html",
+		"/home/rayssa/estagio/front/assets/js/alunos.js",
 		"/home/rayssa/estagio/front/livros.html",
+		"/home/rayssa/estagio/front/assets/js/emprestimo.js",
+		"/home/rayssa/estagio/front/assets/js/livros.js",
+		"/home/rayssa/estagio/front/assets/css/style.css",
+		"/home/rayssa/estagio/front/teste.html",
 		"/home/rayssa/Desktop/autores.html",
 		"/home/rayssa/Desktop/autores.js",
-		"/home/rayssa/estagio/front/assets/js/livros.js",
 		"/home/rayssa/Desktop/alunos.html",
-		"/home/rayssa/estagio/front/assets/js/alunos.js",
 		"/home/rayssa/Desktop/alunos.js",
 		"/home/rayssa/estagio/docker-compose.yml",
-		"/home/rayssa/estagio/front/assets/css/style.css",
-		"/home/rayssa/estagio/front/index.html",
-		"/home/rayssa/estagio/front/autores.html",
-		"/home/rayssa/estagio/front/alunos.html",
 		"/home/rayssa/estagio/docker/nginx/front.conf",
 		"/home/rayssa/estagio/front/assets/vendor/index2.html",
 		"/home/rayssa/estagio/front/assets/livros.html",
 		"/home/rayssa/estagio/front/assets/vendor/livros.html",
 		"/home/rayssa/.config/sublime-text-3/Packages/User/snippets/console.log.sublime-snippet",
 		"/home/rayssa/estagio/front/livros.js",
-		"/home/rayssa/estagio/front/assets/js/autores.js",
 		"/home/rayssa/estagio/front/table.html",
 		"/home/rayssa/Downloads/controller.js",
 		"/home/rayssa/Downloads/controller.txt",
-		"/home/rayssa/estagio/front/assets/js/index.js",
 		"/home/rayssa/Downloads/index.html",
 		"/home/rayssa/estagio/front/assets/vendor/knockout/knockout.js",
 		"/home/rayssa/estagio/front/assets/index.html",
@@ -325,6 +373,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"secEditingAccount",
+			"console",
+			"autor",
+			"cadastra",
+			"console.log",
+			"livros",
+			"nome",
+			"nomeAutor",
+			"nome",
+			"'http://localhost:81",
+			"idLivros",
+			"idAutor",
+			"objLivro",
+			"objAutor",
+			"Autor_idAutor",
+			"dataEmprestimo",
+			"Livros_Livrosid",
+			"matriculaAluno",
+			"idNome",
+			"objAlunos",
+			"observable",
+			"Alunos",
 			"set",
 			"Autor_idAutor",
 			"new id",
@@ -381,54 +451,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/js/alunos.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2499,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2322,
-								2322
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1035.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "assets/js/livros.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2511,
+						"buffer_size": 3524,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2348,
-								2348
+								3066,
+								3066
 							]
 						],
 						"settings":
@@ -438,10 +478,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 945.0,
+						"translation.y": 1247.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "livros.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2234,
+								2234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 70.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

@@ -14,7 +14,7 @@ function Emprestimos(objEmprestimo) {
     if (editing === false){
       $.ajax({
         type: 'PUT',
-        url: 'http://localhost:81/v1/emprestimos/' + self.idEmprestimo(), // ele pega o id pela rota, por isso nao preciso declarar ali em baixo
+        url: window.global.urlapi + '/v1/emprestimos/' + self.idEmprestimo(), // ele pega o id pela rota, por isso nao preciso declarar ali em baixo
         data:{
           Aluno_idAluno: self.(),
           Livro_idLivro: self.
@@ -48,7 +48,7 @@ function AppViewModel() {
   self.excluir = function(person){
     $.ajax({
       type: 'DELETE',
-      url: 'http://localhost:81/v1/Emprestimos/' + person.Aluno_idAluno(),
+      url: window.global.urlapi + '/v1/Emprestimos/' + person.Aluno_idAluno(),
       success: function(result){
         if(!!result.records.success){
           return self.Emprestimos.remove(person);
@@ -74,7 +74,7 @@ function AppViewModel() {
   };
 
   $.ajax({
-    url: 'http://localhost:81/v1/Emprestimos',
+    url: window.global.urlapi + '/v1/Emprestimos',
     type: 'GET',
     success: function(result){
       self.setData(result.records);
@@ -85,15 +85,29 @@ function AppViewModel() {
 
   self.add = function(){
     $.ajax({
-      url: 'http://localhost:81/v1/Emprestimos',
+      url: window.global.urlapi + '/v1/Emprestimos',
       type: 'POST',
       data:{
         idEmprestimo: self.idEmprestimo(),
         dataEmprestimo: self.dataEmprestimo()
       },
-      success: function(inserir){
-        self.Emprestimos.push(new Emprestimos(inserir.records));
+        success: function(inserir){ //cria uma funcao inserir
+        var secSearch = ko.utils.arrayFirst( //usa o array first
+          self.autores(),
+          function(secEditingAccount) {
+            return secEditingAccount.matriculaAluno() === self.Aluno_idAluno();
+          }
+        );
+        inserir.records.nome = secSearch.nomeAutor();
+
+        self.livros.push(new Emprestimos(inserir.records));
+
+        self.Aluno_idAluno('');
         self.idEmprestimo('');
+      }
+    });
+  };
+}
       }
     });
   };
