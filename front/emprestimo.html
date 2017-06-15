@@ -13,8 +13,8 @@
     </li> <li role="presentation"><a href="livros.html">Livros</a>
     </li><li role="presentation"><a href="alunos.html">Alunos</a>
     </li><li role="presentation"><a href="emprestimo.html">Emprestimos</a>
-    </li><li role="presentation"><a href="#">Funcionários</a>
-    </li> <li role="presentation"><a href="#">Biblioteca</a></li> </ul>
+    </li><li role="presentation"><a href="funcionarios.html">Funcionários</a>
+    </ul>
         <div id="app" class="container-fluid">
             <h1>Cadastro de Emprestimos</h1>
 
@@ -29,33 +29,48 @@
 
                         <div class="form-group">
                                 <label for="sel1">Matricula do Aluno:</label>
-                                <select class="form-control" id="sel1" name="carlist" data-bind= "options: emprestimos, optionsText: 'nomeAutor', optionsValue: 'Aluno_idAluno', value: Aluno_idAluno, optionsCaption: 'Selecione um aluno'">
-                                <option>1</option>
+                                <select class="form-control" id="sel1" name="carlist" data-bind= "options: emprestimos, optionsText: 'idMatricula', optionsValue: 'matriculaAluno', value: Aluno_idAluno, optionsCaption: 'Selecione um aluno'">
+                                <select class="form-control" id="sel1" name="carlist" data-bind= "options: autores, optionsText: 'CodEmprestimo', optionsValue: 'idAutor', value: Autor_idAutor, optionsCaption: 'Selecione um autor'">
+                                <!-- <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
-                                <option>4</option>
+                                <option>4</option> -->
                                 </select>
 
                             </select><br>
 
-                        Data de Emprestimo: <input type="date" class="form-control input-s" data-bind="value: dataEmprestimo"><br>
+                       <b>Data de Emprestimo:</b>  <input type="date" class="form-control input-s" data-bind="value: dataEmprestimo"><br>
+
+
+
+                        <b>Código do Livro<br>
+                         <td data-bind="click: $parent.editRow">
+                                <div data-bind="ifnot: editing">
+                                        <span data-bind="text: dataNasc"></span>
+                                </div>
+                                <div data-bind="if: editing">
+                                        <input type="text" class="form-control input-s" data-bind= "value: dataNasc"> <!--ifnot é um bind do nocaut-->
+                                </div>
+                            </td>
+                            <br>
+
+
+
 
                         <div class="form-group">
-                                <label for="sel1">Código do Livro:</label>
+                                <label for="sel1">Nome do funcionário:</label>
                                 <select class="form-control" id="sel1" name="carlist" data-bind= "options: emprestimos, optionsText: 'nomeAutor', optionsValue: 'Aluno_idAluno', value: Aluno_idAluno, optionsCaption: 'Selecione um aluno'">
-                                <option>1</option>
+                                <!-- <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
-                                <option>4</option>
+                                <option>4</option -->>
                                 </select>
 
                             </select><br>
-                        Nome do Funcionário: <input class="form-control input-s" data-bind="value: id_uncionario">
-                        </div>
-                   <button type="submit" class="btn btn-info btn-sm pull-right">Cadastrar</button><!--aqui é o botão cadastrar-->
-                   </form>
-                </div>
-            </div>
+
+
+
+            <button type="submit" class="btn btn-info btn-sm pull-right">Cadastrar</button><!--aqui é o botão cadastrar-->
             <br>
             <div class="row">
                 <div class="col-md-12">
@@ -66,8 +81,6 @@
                         <table class="table">
                             <thead>
                               <tr>
-
-
                                 <th>Matricula do Aluno</th>
                                 <th>Data de Emprestimo</th>
                                 <th>Código do Livro</th>
@@ -78,8 +91,6 @@
                             </thead>
                             <tbody data-bind="foreach: alunos">
                               <tr>
-
-
                                 <td data-bind="click: $parent.editRow">
                                     <div data-bind="ifnot: editing">
                                         <span data-bind="text: Aluno_idAluno"></span>

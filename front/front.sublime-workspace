@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"em",
+				"emprestimo"
+			],
+			[
+				"nome",
+				"nomeAutor"
+			],
+			[
+				"e",
+				"emprestimos"
+			],
+			[
+				"ID",
+				"idFuncionario"
+			],
+			[
+				"id",
+				"idFuncionario"
+			],
+			[
+				"noem",
+				"nomeFuncionario"
+			],
+			[
+				"empre",
+				"emprestimos"
+			],
+			[
+				"Li",
+				"Livro_idLivro"
+			],
+			[
+				"Aluno",
+				"Aluno_idAluno"
+			],
+			[
 				"sec",
 				"secSearch"
 			],
@@ -32,10 +68,6 @@
 				"objLivro"
 			],
 			[
-				"id",
-				"idAutor"
-			],
-			[
 				"ur",
 				"url"
 			],
@@ -58,10 +90,6 @@
 			[
 				"l",
 				"log\tconsole.log"
-			],
-			[
-				"Li",
-				"Livros_Livrosid"
 			],
 			[
 				"u",
@@ -92,10 +120,6 @@
 				"background"
 			],
 			[
-				"e",
-				"excluir"
-			],
-			[
 				"ge",
 				"generoAutor"
 			],
@@ -118,14 +142,6 @@
 			[
 				"data",
 				"dataNasc"
-			],
-			[
-				"noem",
-				"nomeAutor"
-			],
-			[
-				"nome",
-				"nomeAutor"
 			],
 			[
 				"o",
@@ -220,6 +236,14 @@
 			"settings":
 			{
 				"buffer_size": 3524,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "emprestimo.html",
+			"settings":
+			{
+				"buffer_size": 8075,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -228,7 +252,16 @@
 			"file": "livros.html",
 			"settings":
 			{
-				"buffer_size": 5364,
+				"buffer_size": 5328,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/emprestimo.js",
+			"settings":
+			{
+				"buffer_size": 4325,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -280,26 +313,28 @@
 	[
 		"/home/rayssa/estagio",
 		"/home/rayssa/estagio/front",
-		"/home/rayssa/estagio/front/assets/vendor",
-		"/home/rayssa/estagio/front/assets/vendor/bootstrap",
+		"/home/rayssa/estagio/front/assets",
+		"/home/rayssa/estagio/front/assets/js",
 		"/home/rayssa/estagio/front/assets/vendor/bootstrap/css",
-		"/home/rayssa/estagio/front/assets/vendor/knockout",
-		"/home/rayssa/estagio/front/assets/vendor/moment"
+		"/home/rayssa/estagio/front/assets/vendor/bootstrap/fonts",
+		"/home/rayssa/estagio/front/assets/vendor/bootstrap/js"
 	],
 	"file_history":
 	[
+		"/home/rayssa/estagio/front/assets/js/autores.js",
+		"/home/rayssa/estagio/front/assets/js/funcionarios.js",
+		"/home/rayssa/estagio/front/funcionarios.html",
+		"/home/rayssa/estagio/front/assets/js/emprestimo.js",
+		"/home/rayssa/estagio/front/assets/vendor/bootstrap/css/style.css",
+		"/home/rayssa/estagio/front/livros.html",
+		"/home/rayssa/estagio/front/index.html",
+		"/home/rayssa/estagio/front/emprestimo.html",
+		"/home/rayssa/estagio/front/alunos.html",
+		"/home/rayssa/estagio/front/assets/js/livros.js",
+		"/home/rayssa/estagio/front/autores.html",
 		"/home/rayssa/estagio/front/assets/js/index.js",
 		"/home/rayssa/estagio/front/assets/js/globals.js",
-		"/home/rayssa/estagio/front/emprestimo.html",
-		"/home/rayssa/estagio/front/autores.html",
-		"/home/rayssa/estagio/front/assets/js/autores.js",
-		"/home/rayssa/estagio/front/alunos.html",
-		"/home/rayssa/estagio/front/assets/vendor/bootstrap/css/style.css",
-		"/home/rayssa/estagio/front/index.html",
 		"/home/rayssa/estagio/front/assets/js/alunos.js",
-		"/home/rayssa/estagio/front/livros.html",
-		"/home/rayssa/estagio/front/assets/js/emprestimo.js",
-		"/home/rayssa/estagio/front/assets/js/livros.js",
 		"/home/rayssa/estagio/front/assets/css/style.css",
 		"/home/rayssa/estagio/front/teste.html",
 		"/home/rayssa/Desktop/autores.html",
@@ -359,7 +394,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 106.0
 	},
 	"find_in_files":
 	{
@@ -373,6 +408,36 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"function matriculaAluno(objEmprestimo){\n  var self = this;\n  // console.log(objAutor);\n  self.matriculaAluno = ko.observable(objEmprestimo.idAutor);\n  self.CodEmprestimo = ko.observable(objEmprestimo.CodEmprestimo);\n}",
+			"funcionarios",
+			"nome",
+			"noem",
+			"autor",
+			"funcionarios",
+			"autor",
+			"Nomefuncionario ",
+			"nomeAutor",
+			"emprestimo",
+			"funcionarios",
+			"emprestimo",
+			"nomeAutor",
+			"emprestimo",
+			"nome",
+			"nomeAutor",
+			"emprestimos",
+			"cargo",
+			"titulo",
+			"Autor_idAutor",
+			"livros",
+			"autor",
+			"livros",
+			"objLivro",
+			"idLivros",
+			"nomeAutor",
+			"autores",
+			"emprestimos",
+			"autores",
+			"moment",
 			"secEditingAccount",
 			"console",
 			"autor",
@@ -467,8 +532,8 @@
 						"selection":
 						[
 							[
-								3066,
-								3066
+								0,
+								0
 							]
 						],
 						"settings":
@@ -478,27 +543,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1247.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "livros.html",
+					"file": "emprestimo.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5364,
+						"buffer_size": 8075,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2234,
-								2234
+								2966,
+								2966
 							]
 						],
 						"settings":
@@ -507,11 +572,77 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 70.0,
-						"translation.y": 270.0,
+						"translation.x": 0.0,
+						"translation.y": 772.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "livros.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "assets/js/emprestimo.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1312,
+								1312
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -534,11 +665,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -594,7 +732,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

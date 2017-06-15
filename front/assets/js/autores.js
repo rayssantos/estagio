@@ -73,6 +73,7 @@ function AppViewModel() {
   };
 
   self.setData = function(data){
+
     data.forEach(function(value){
       self.autor.push(new Autor(value));
     });

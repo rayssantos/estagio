@@ -10,32 +10,51 @@ function Emprestimos(objEmprestimo) {
   self.editing = ko.observable();
 
   self.editing.subscribe(function(editing){
-    console.log(editing);
     if (editing === false){
       $.ajax({
         type: 'PUT',
         url: window.global.urlapi + '/v1/emprestimos/' + self.idEmprestimo(), // ele pega o id pela rota, por isso nao preciso declarar ali em baixo
         data:{
-          Aluno_idAluno: self.(),
-          Livro_idLivro: self.
+          Aluno_idAluno: self.Aluno_idAluno(),
+          Livro_idLivro: self.Livro_idLivro(),
           id_funcionario:self.id_funcionario(),
           dataEmprestimo: self.dataEmprestimo(),
         },
         success: function(result){
-          console.log(result);
+
         }
       });
     }
   });
 }
 
+function Matricula(objMatricula){
+  var self = this;
+  self.matriculaAluno = ko.observable(objEmprestimo.matriculaAluno);
+  //self.CodEmprestimo = ko.observable(objEmprestimo.CodEmprestimo);
+}
+function Funcionario(objFuncionario){
+  var self = this;
+  self.idFuncionario = ko.observable(objFuncionario.idAutor);
+  //self.CodEmprestimo = ko.observable(objFuncionario.CodEmprestimo);
+}
+function Codigo(objCodigo){
+  var self = this;
+  self.idLivros = ko.observable(objCodigo.idLivros);
+ // self.CodEmprestimo = ko.observable(objEmprestimo.CodEmprestimo);
+}
 function AppViewModel() {
   var self = this;
   self.people = ko.observableArray([]);// Lista de pessoas
   self.personName = ko.observable("");// pega o que o cara vai digitar
-  self.Emprestimos = ko.observableArray();
-  self.idEmprestimo = ko.observable();
+  self.emprestimos = ko.observableArray();
+  self.Aluno_idAluno = ko.observable();
+  self.Livro_idLivro = ko.observable();
+  self.id_funcionario = ko.observable();
   self.dataEmprestimo = ko.observable();
+  self.CodEmprestimo =  ko.observable();
+  self.CodEmprestimo2 = ko.observable();
+  self.CodEmprestimo3 = ko.observable();
   self.editing = ko.observable();
 
    self.enter = function(model, event){
@@ -74,10 +93,26 @@ function AppViewModel() {
   };
 
   $.ajax({
-    url: window.global.urlapi + '/v1/Emprestimos',
+    url: window.global.urlapi + '/v1/emprestimos',
     type: 'GET',
     success: function(result){
       self.setData(result.records);
+    }
+  });
+
+   self.setEmprestimos = function(data){
+    data.forEach(function(value){
+      // console.log(value);
+      self.emprestimos.push(new Autor(value));
+     //console.log(self.autores());
+    });
+  };
+
+  $.ajax({
+    url: window.global.urlapi + '/v1/emprestimos',
+    type: 'GET',
+    success: function(result){
+      self.setAutor(result.records)
     }
   });
 
@@ -93,12 +128,12 @@ function AppViewModel() {
       },
         success: function(inserir){ //cria uma funcao inserir
         var secSearch = ko.utils.arrayFirst( //usa o array first
-          self.autores(),
+          self.emprestimos(),
           function(secEditingAccount) {
             return secEditingAccount.matriculaAluno() === self.Aluno_idAluno();
           }
         );
-        inserir.records.nome = secSearch.nomeAutor();
+        inserir.records.nome = secSearch.CodEmprestimo();
 
         self.livros.push(new Emprestimos(inserir.records));
 
@@ -108,6 +143,58 @@ function AppViewModel() {
     });
   };
 }
+self.add = function(){
+    $.ajax({
+      url: window.global.urlapi + '/v1/Emprestimos',
+      type: 'POST',
+      data:{
+        idEmprestimo: self.idEmprestimo(),
+        dataEmprestimo: self.dataEmprestimo()
+      },
+        success: function(inserir){ //cria uma funcao inserir
+        var secSearch = ko.utils.arrayFirst( //usa o array first
+          self.emprestimos(),
+          function(secEditingAccount) {
+            return secEditingAccount.matriculaAluno() === self.Aluno_idAluno();
+          }
+        );
+        inserir.records.nome = secSearch.CodEmprestimo();
+
+        self.livros.push(new Emprestimos(inserir.records));
+
+        self.Aluno_idAluno('');
+        self.idEmprestimo('');
+      }
+    });
+  };
+}
+self.add = function(){
+    $.ajax({
+      url: window.global.urlapi + '/v1/Emprestimos',
+      type: 'POST',
+      data:{
+        idEmprestimo: self.idEmprestimo(),
+        dataEmprestimo: self.dataEmprestimo()
+      },
+        success: function(inserir){ //cria uma funcao inserir
+        var secSearch = ko.utils.arrayFirst( //usa o array first
+          self.emprestimos(),
+          function(secEditingAccount) {
+            return secEditingAccount.matriculaAluno() === self.Aluno_idAluno();
+          }
+        );
+        inserir.records.nome = secSearch.CodEmprestimo();
+
+        self.livros.push(new Emprestimos(inserir.records));
+
+        self.Aluno_idAluno('');
+        self.idEmprestimo('');
+      }
+    });
+  };
+}
+
+
       }
     });
   };
