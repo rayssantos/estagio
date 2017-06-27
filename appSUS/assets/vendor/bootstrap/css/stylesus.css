@@ -1,10 +1,10 @@
-i{
+{
     cursor:pointer;
 }
 body{
 
-    background-image: url(https://www.reab.me/wp-content/uploads/2016/06/books-484766_1280.jpg);
-    background-size: 100%;
+    /*background-image: url(https://www.reab.me/wp-content/uploads/2016/06/books-484766_1280.jpg);*/
+    background-size: 50%;
 
 }
 
@@ -21,17 +21,16 @@ h1{
 .panel{
     background-color: rgba(40, 96, 144, 0.16);
 }
-h1{
-    text-align: center;
-
+h3{
+  text-align: center;
 }
-
-.carousel-inner{
-
-   overflow: hidden;
-
+p{
+  text-align: center;
 }
-
-.item{
-    overflow: hidden;
+.nav{
+  width: 100%;
+  right: 100%
+}
+.nav nav-pills{
+  width: 100%
 }

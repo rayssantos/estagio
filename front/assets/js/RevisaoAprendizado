@@ -1,0 +1,92 @@
+// model: onde eu guardo os dados do meu banco de dados, que eu usarei na minha aplicação
+
+// view model: é onde acontece a mágica das ações,
+// onde eu tenho funções js, que são responsaveis pela parte interativa do meu sistema
+
+// view : O que aparece pro usário, tudo bonitinho
+
+
+
+//self se refere a 'dono', 'eu mesmo'
+//self É a palavra que substitui a classe, interface, etc no qual pertence os métodos.
+// De forma simplificada, $this se refere ao objeto (instância) atual, e self se refere à classe.
+// Portanto, como regra geral, usa-se $this para acessar membros (atributos, métodos) da instância
+// e self para acessar membros estáticos.
+//https://pt.stackoverflow.com/questions/575/quando-usar-self-vs-this-em-php (link explicativo )
+
+
+//Observables: são utilizadas, para que quando a view model é alterada, ela atualize a ui automaticamente
+
+//data-bind: Então, quando você escreveu data-bind="text: personName",
+o binding text se registrou para ser notificado quando personName ser alterado (presumindo que ele seja um valor observable, o que é, agora
+
+
+// Utilizando subscrible:
+Quando a variável é alterada ele executa a função que tu passa
+
+*****Funções*****
+
+//Cadastrar, quando o enter é clicando:
+
+
+ self.enter= function(model, event){
+    if (event.keyCode === 13){ -> aqui usa-se o event.keycode,uma função do js
+                                A propriedade keyCode
+                                retorna o código de caractere Unicode da chave que
+                                desencadeou o evento onkeypress (quando a tecla é pressionada) nesse caso '13' que representa o enter, do teclado
+
+                                bind event  funciona para eventos
+                                especificos que voce declara na sua funcao, ou seja, ela é chamada
+                                quando esse evento for acionado no html por exemplo
+link explicativo do keycode, onkeypress
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_key_keycode
+
+      self.addPerson(); instancia minha funcao que esta na appviewmodel
+      self.personName("");//observavel que o cara vai digitar
+    }
+  }
+
+
+// Editar o campo
+para editar o campo, foi utilizada a seguinte função
+
+self.editar = function(emprestimos){
+    emprestimos.editing(!emprestimos.editing());
+  };
+
+para afunção editar em si, foi utilizado o data bind ifnot
+funciona do jeito seguinte:
+http://alexhiroshi.github.io/knockoutjs-brasil/documentation/if-binding.html
+
+
+O binding click :adiciona um manipulador de eventos
+para que a sua função JavaScript seja chamada quando o elemento associado for clicado
+isso é usado no html e remete ao seguinte código:
+data-bind= "click: $parent.editar"></i></td> click: (funcao) editar
+
+O $parent:
+
+
+
+console.log serve para depurar codigo
+O método log() existe essencialmente para permitir o envio
+de dados para a consola de depuração do navegador.
+Pode ser enviada qualquer informação.
+
+AJAX: O ajax faz chamadas para o back-end
+https://www.w3schools.com/xml/ajax_intro.asp
+
+
+
+
+Contribuições:
+
+ Facilitar, agilizar e tornar mais acessível o acesso da população às consultas médicas
+
+ Permitir que o agendamento de consultas ocorra em qualquer lugar e hora por pessoas que tenham um celular androide com acesso a internet.
+
+Oferecer a equipe do posto de saúde um auto atendimento para uma das tarefas que mais depende tempo e mão –de-obra de seus atendentes diariamente.
+
+  Gerar relatórios, agendas médicas, datas e horários livres, remanejamento de consultas, sistema de avaliação e ranking de médicos e unidades de saúde.
+
+Outras funcionalidades previstas são sistema de notificação de datas e horas das consultas agendadas, mapas e contatos dos postos de saúde próximos a localização do paciente.

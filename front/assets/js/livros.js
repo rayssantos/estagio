@@ -3,7 +3,7 @@ function Livros(objLivro) {
   var self = this;
 
 
-//criar uma funcao para tornar os values observaveis pois so as colunas estavam como observavei
+//criar uma funcao para tornar os values observaveis pois so as colunas estavam como observaveis
 
   self.idLivros = ko.observable(objLivro.idLivros);
   self.Autor_idAutor = ko.observable(objLivro.Autor_idAutor);
@@ -33,19 +33,22 @@ function Autor(objAutor){
   // console.log(objAutor);
   self.idAutor = ko.observable(objAutor.idAutor);
   self.nomeAutor = ko.observable(objAutor.nome);
+  console.log(self.nomeAutor);
 }
 
 
 function AppViewModel() {
   var self = this;
+
   self.people = ko.observableArray([]);// Lista de pessoas
   self.personName = ko.observable("");// pega o que o cara vai digitar
-  self.livros = ko.observableArray();
   self.Autor_idAutor = ko.observable();
   self.titulo = ko.observable();
   self.editing = ko.observable();
+  self.livros = ko.observableArray();
   self.autores = ko.observableArray();
   self.nomeAutor = ko.observable();
+
   //self.autores = ko.observableArray();
 
 
@@ -134,6 +137,7 @@ function AppViewModel() {
 
         self.Autor_idAutor('');
         self.titulo('');
+        self.idLivros('');
       }
     });
   };

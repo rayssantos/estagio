@@ -1,13 +1,18 @@
-function Emprestimos(objEmprestimo) {
-  var self = this;
+ function Emprestimos(objEmprestimo) {
+   var self = this;
 
-//criar uma funcao para tornar os values observaveis pois so as colunas estavam como observavei
-  self.idEmprestimo = ko.observable(objEmprestimo.idEmprestimo);
-  self.Aluno_idAluno = ko.observable(objEmprestimo.Aluno_idAluno);
+  //self.idEmprestimo = ko.observable(objEmprestimo.idEmprestimo);
+  self.Aluno_idAluno = ko.observable(self.Aluno_idAluno); //
+  self.matriculaAluno = ko.observable(objEmprestimo.matriculaAluno),
   self.dataEmprestimo = ko.observable(objEmprestimo.dataEmprestimo);
   self.Livro_idLivro = ko.observable(objEmprestimo.Livro_idLivro);
-  self.id_funcionario= ko.observable(objEmprestimo.id_funcionario);
+  self.nomedofuncionario = ko.observable(objEmprestimo.nomedofuncionario);
   self.editing = ko.observable();
+  self.idLivros = ko.observable(objEmprestimo.idLivros),
+  self.nome = ko.observable(objEmprestimo.nome),
+  self.Nome = ko.observable(objEmprestimo.nome)
+  self.nomeMatricula = ko.observable(objEmprestimo.matriculaAluno);
+  self.nomeCodigo = ko.observable(objEmprestimo.nomeCodigo);
 
   self.editing.subscribe(function(editing){
     if (editing === false){
@@ -17,8 +22,8 @@ function Emprestimos(objEmprestimo) {
         data:{
           Aluno_idAluno: self.Aluno_idAluno(),
           Livro_idLivro: self.Livro_idLivro(),
-          id_funcionario:self.id_funcionario(),
           dataEmprestimo: self.dataEmprestimo(),
+          nomedofuncionario: self.nomedofuncionario()
         },
         success: function(result){
 
@@ -30,65 +35,61 @@ function Emprestimos(objEmprestimo) {
 
 function Matricula(objMatricula){
   var self = this;
-  self.matriculaAluno = ko.observable(objEmprestimo.matriculaAluno);
-  //self.CodEmprestimo = ko.observable(objEmprestimo.CodEmprestimo);
+  self.matriculaAluno = ko.observable(objMatricula.matriculaAluno);
+  self.nomeMatricula = ko.observable(objMatricula.matriculaAluno);
+
 }
-function Funcionario(objFuncionario){
-  var self = this;
-  self.idFuncionario = ko.observable(objFuncionario.idAutor);
-  //self.CodEmprestimo = ko.observable(objFuncionario.CodEmprestimo);
-}
+
 function Codigo(objCodigo){
   var self = this;
   self.idLivros = ko.observable(objCodigo.idLivros);
- // self.CodEmprestimo = ko.observable(objEmprestimo.CodEmprestimo);
+  self.nomeCodigo = ko.observable(objCodigo.idLivros);
+
 }
 function AppViewModel() {
   var self = this;
-  self.people = ko.observableArray([]);// Lista de pessoas
-  self.personName = ko.observable("");// pega o que o cara vai digitar
-  self.emprestimos = ko.observableArray();
+  console.log(self.nomeMatricula);
+  self.idEmprestimo = ko.observable();
   self.Aluno_idAluno = ko.observable();
+  self.matriculaAluno = ko.observable();
   self.Livro_idLivro = ko.observable();
-  self.id_funcionario = ko.observable();
+  self.idLivros = ko.observable();
   self.dataEmprestimo = ko.observable();
-  self.CodEmprestimo =  ko.observable();
-  self.CodEmprestimo2 = ko.observable();
-  self.CodEmprestimo3 = ko.observable();
+  self.nomedofuncionario = ko.observable();
+  self.nomeMatricula = ko.observable();
+  self.nomeCodigo = ko.observable();
+  self.matriculas = ko.observableArray();
+  self.codigos = ko.observableArray();
+  self.emprestimos = ko.observableArray();
   self.editing = ko.observable();
+  //self.id_funcionario = ko.observable();
 
-   self.enter = function(model, event){
-    if (event.keyCode === 13){
-      self.addPerson();
-      self.personName("");
-    }
-  }
 
   self.excluir = function(person){
     $.ajax({
       type: 'DELETE',
-      url: window.global.urlapi + '/v1/Emprestimos/' + person.Aluno_idAluno(),
+      url: window.global.urlapi + '/v1/emprestimos/' + person.idEmprestimo(),
       success: function(result){
         if(!!result.records.success){
-          return self.Emprestimos.remove(person);
+          return self.emprestimos.remove(person);
         }
       }
     })
   };
 
-  self.editar = function(Emprestimos){
-    Emprestimos.editing(!Emprestimos.editing());
+  self.editar = function(emprestimos){
+    emprestimos.editing(!emprestimos.editing());
   };
 
-  self.editRow = function(Emprestimos){
-    if(!Emprestimos.editing()){
-      Emprestimos.editing(true);
+  self.editRow = function(emprestimos){
+    if(!emprestimos.editing()){
+      emprestimos.editing(true);
     }
   };
 
   self.setData = function(data){
     data.forEach(function(value){
-      self.Emprestimos.push(new Emprestimos(value));
+      self.emprestimos.push(new Emprestimos(value));
     });
   };
 
@@ -100,106 +101,74 @@ function AppViewModel() {
     }
   });
 
-   self.setEmprestimos = function(data){
+  self.setMatricula = function(data){
     data.forEach(function(value){
-      // console.log(value);
-      self.emprestimos.push(new Autor(value));
-     //console.log(self.autores());
+      self.matriculas.push(new Matricula(value));
     });
   };
 
-  $.ajax({
-    url: window.global.urlapi + '/v1/emprestimos',
+   $.ajax({
+    url: window.global.urlapi + '/v1/alunos',
     type: 'GET',
     success: function(result){
-      self.setAutor(result.records)
+      self.setMatricula(result.records)
+    }
+  });
+  self.setCodigo = function(data){
+    data.forEach(function(value){
+      self.codigos.push(new Codigo(value));
+    });
+  };
+   $.ajax({
+    url: window.global.urlapi + '/v1/livros',
+    type: 'GET',
+    success: function(result){
+      self.setCodigo(result.records)
     }
   });
 
-
-
   self.add = function(){
     $.ajax({
-      url: window.global.urlapi + '/v1/Emprestimos',
+      url: window.global.urlapi + '/v1/emprestimos',
       type: 'POST',
       data:{
-        idEmprestimo: self.idEmprestimo(),
-        dataEmprestimo: self.dataEmprestimo()
-      },
-        success: function(inserir){ //cria uma funcao inserir
-        var secSearch = ko.utils.arrayFirst( //usa o array first
+        dataEmprestimo: self.dataEmprestimo(),
+        matriculaAluno: self.nomeMatricula(),
+        idLivros: self.idLivros(),
+        Aluno_idAluno: self.Aluno_idAluno(),
+        Livro_idLivro: self.Livro_idLivro(),
+        nomedofuncionario: self. nomedofuncionario(),
+        nomeCodigo: self.nomeCodigo(),
+        nomeMatricula: self.matriculaAluno(),
+
+
+
+         },
+
+        success: function(inserir){
+         // console.log(inserir);
+        var secSearch = ko.utils.arrayFirst(
           self.emprestimos(),
           function(secEditingAccount) {
             return secEditingAccount.matriculaAluno() === self.Aluno_idAluno();
           }
         );
-        inserir.records.nome = secSearch.CodEmprestimo();
+        inserir.records.matriculaAluno = secSearch.matriculaAluno();
+        inserir.records.idLivros = secSearch.nomeCodigo();
 
-        self.livros.push(new Emprestimos(inserir.records));
+        self.emprestimos.push(new Emprestimos(inserir.records));
+        //self.codigos.push(new Codigos(inserir.records));
+        //self.matriculas.push(new Matriculas(inserir.records));
 
-        self.Aluno_idAluno('');
-        self.idEmprestimo('');
-      }
-    });
-  };
-}
-self.add = function(){
-    $.ajax({
-      url: window.global.urlapi + '/v1/Emprestimos',
-      type: 'POST',
-      data:{
-        idEmprestimo: self.idEmprestimo(),
-        dataEmprestimo: self.dataEmprestimo()
-      },
-        success: function(inserir){ //cria uma funcao inserir
-        var secSearch = ko.utils.arrayFirst( //usa o array first
-          self.emprestimos(),
-          function(secEditingAccount) {
-            return secEditingAccount.matriculaAluno() === self.Aluno_idAluno();
-          }
-        );
-        inserir.records.nome = secSearch.CodEmprestimo();
-
-        self.livros.push(new Emprestimos(inserir.records));
-
-        self.Aluno_idAluno('');
-        self.idEmprestimo('');
-      }
-    });
-  };
-}
-self.add = function(){
-    $.ajax({
-      url: window.global.urlapi + '/v1/Emprestimos',
-      type: 'POST',
-      data:{
-        idEmprestimo: self.idEmprestimo(),
-        dataEmprestimo: self.dataEmprestimo()
-      },
-        success: function(inserir){ //cria uma funcao inserir
-        var secSearch = ko.utils.arrayFirst( //usa o array first
-          self.emprestimos(),
-          function(secEditingAccount) {
-            return secEditingAccount.matriculaAluno() === self.Aluno_idAluno();
-          }
-        );
-        inserir.records.nome = secSearch.CodEmprestimo();
-
-        self.livros.push(new Emprestimos(inserir.records));
-
-        self.Aluno_idAluno('');
-        self.idEmprestimo('');
+         self.nomeMatricula('');
+         //self.nomeCodigo('');
       }
     });
   };
 }
 
-
-      }
-    });
-  };
-};
 
 // Activates knockout.js
 window.model = new AppViewModel();
 ko.applyBindings(window.model);
+

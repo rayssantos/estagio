@@ -1,5 +1,5 @@
 // Classe pessoa
-function Autor(objAutor) {
+function Autor(objAutor) { // criei um objeto que contem os dados que eu vou ultilizar da tabela do banco
   var self = this;
 //criar uma funcao para tornar os values observaveis pois so as colunas estavam como observavei
   self.nome = ko.observable(objAutor.nome);
@@ -8,7 +8,8 @@ function Autor(objAutor) {
   self.generoAutor=ko.observable(objAutor.generoAutor);
   self.editing = ko.observable();
 
-  self.editing.subscribe(function(editing){
+  self.editing.subscribe(function(editing){ //ultiliza-se o ifnot que é um data-bind do knocoute para edição
+
     console.log(editing);
     if (editing === false){
       $.ajax({
@@ -43,7 +44,7 @@ function AppViewModel() {
     //self.people.push(new Person(self.personName()));
   //};
 
-  self.enter= function(model, event){
+  self.enter= function(model, event){ //funçao que cadastra quando eu clico enter
     if (event.keyCode === 13){
       self.addPerson();
       self.personName("");

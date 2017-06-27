@@ -4,28 +4,168 @@
 		"selected_items":
 		[
 			[
-				"em",
-				"emprestimo"
+				"c",
+				"class\tAttr"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"for",
+				"form-control"
+			],
+			[
+				"col",
+				"col-xs-3"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"li",
+				"link\tTag"
 			],
 			[
 				"nome",
 				"nomeAutor"
 			],
 			[
-				"e",
-				"emprestimos"
+				"NOME",
+				"nomeMatricula"
 			],
 			[
-				"ID",
-				"idFuncionario"
-			],
-			[
-				"id",
-				"idFuncionario"
+				"Ma",
+				"Matricula"
 			],
 			[
 				"noem",
-				"nomeFuncionario"
+				"nomeMatricula"
+			],
+			[
+				"aL",
+				"Aluno_idAluno"
+			],
+			[
+				"id",
+				"idLivros"
+			],
+			[
+				"l",
+				"Livro_idLivro"
+			],
+			[
+				"alu",
+				"Aluno_idAluno"
+			],
+			[
+				"ID",
+				"idLivros"
+			],
+			[
+				"MA",
+				"matriculaAluno"
+			],
+			[
+				"sec",
+				"secEditingAccount"
+			],
+			[
+				"liv",
+				"Livro_idLivro"
+			],
+			[
+				"ob",
+				"observable"
+			],
+			[
+				"Nome",
+				"Nome"
+			],
+			[
+				"ALUN",
+				"alunos"
+			],
+			[
+				"MATRIU",
+				"matriculas"
+			],
+			[
+				"matricula",
+				"matriculaAluno"
+			],
+			[
+				"MATRI",
+				"matriculaAluno"
+			],
+			[
+				"lIVRO",
+				"Livro_idLivro"
+			],
+			[
+				"matr",
+				"matriculas"
+			],
+			[
+				"nom",
+				"nomeEmprestimo"
+			],
+			[
+				"se",
+				"self"
+			],
+			[
+				"matri",
+				"matriculaAluno"
+			],
+			[
+				"COD",
+				"CodEmprestimo"
+			],
+			[
+				"cod",
+				"CodEmprestimo"
+			],
+			[
+				"Ci",
+				"CodEmprestimo"
+			],
+			[
+				"C",
+				"CodEmprestimo3"
+			],
+			[
+				"em",
+				"emprestimo"
+			],
+			[
+				"e",
+				"emprestimos"
 			],
 			[
 				"empre",
@@ -40,10 +180,6 @@
 				"Aluno_idAluno"
 			],
 			[
-				"sec",
-				"secSearch"
-			],
-			[
 				"au",
 				"Autor_idAutor"
 			],
@@ -52,20 +188,12 @@
 				"autores"
 			],
 			[
-				"se",
-				"secSearch"
-			],
-			[
 				"autor",
 				"Autor_idAutor"
 			],
 			[
 				"re",
 				"records"
-			],
-			[
-				"ob",
-				"objLivro"
 			],
 			[
 				"ur",
@@ -88,20 +216,8 @@
 				"Livro_idLivro"
 			],
 			[
-				"l",
-				"log\tconsole.log"
-			],
-			[
 				"u",
 				"url()"
-			],
-			[
-				"li",
-				"livros"
-			],
-			[
-				"ba",
-				"background-image"
 			],
 			[
 				"Au",
@@ -168,10 +284,6 @@
 				"alunos"
 			],
 			[
-				"ma",
-				"matriculaAluno"
-			],
-			[
 				"idName",
 				"bcompiler_write_included_filename"
 			],
@@ -232,37 +344,94 @@
 	"buffers":
 	[
 		{
-			"file": "assets/js/livros.js",
+			"file": "/home/rayssa/www/sm/public/assets/lib/bootstrap/css/users.css",
 			"settings":
 			{
-				"buffer_size": 3524,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "emprestimo.html",
-			"settings":
-			{
-				"buffer_size": 8075,
+				"buffer_size": 473,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "livros.html",
+			"file": "/home/rayssa/www/sm/app/views/users/users.phtml",
 			"settings":
 			{
-				"buffer_size": 5328,
+				"buffer_size": 1570,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/js/emprestimo.js",
+			"file": "/home/rayssa/www/sm/public/assets/js/users.js",
 			"settings":
 			{
-				"buffer_size": 4325,
+				"buffer_size": 318,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rayssa/www/sm/public/assets/js/index.js",
+			"settings":
+			{
+				"buffer_size": 994,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/index.js",
+			"settings":
+			{
+				"buffer_size": 994,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rayssa/www/sm/app/controllers/UsersController.php",
+			"settings":
+			{
+				"buffer_size": 127,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rayssa/www/sm/app/views/index.phtml",
+			"settings":
+			{
+				"buffer_size": 178,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rayssa/www/sm/app/views/signup/index.phtml",
+			"settings":
+			{
+				"buffer_size": 1337,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rayssa/www/sm/public/index.php",
+			"settings":
+			{
+				"buffer_size": 1860,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<h1>layout</h1>\n<?php\necho $this->getContent(); ?>\n",
+			"file": "/home/rayssa/www/sm/app/layouts/index.phtml",
+			"file_size": 51,
+			"file_write_time": 131429720623165291,
+			"settings":
+			{
+				"buffer_size": 51,
 				"line_ending": "Unix"
 			}
 		}
@@ -274,10 +443,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 172.0,
-		"last_filter": "htl",
+		"height": 192.0,
+		"last_filter": "refre",
 		"selected_items":
 		[
+			[
+				"refre",
+				"Project: Refresh Folders"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"htl",
 				"Set Syntax: HTML (Tcl)"
@@ -315,33 +492,75 @@
 		"/home/rayssa/estagio/front",
 		"/home/rayssa/estagio/front/assets",
 		"/home/rayssa/estagio/front/assets/js",
+		"/home/rayssa/estagio/front/assets/vendor",
 		"/home/rayssa/estagio/front/assets/vendor/bootstrap/css",
 		"/home/rayssa/estagio/front/assets/vendor/bootstrap/fonts",
-		"/home/rayssa/estagio/front/assets/vendor/bootstrap/js"
+		"/home/rayssa/www/sm",
+		"/home/rayssa/www/sm/app",
+		"/home/rayssa/www/sm/app/configs",
+		"/home/rayssa/www/sm/app/controllers",
+		"/home/rayssa/www/sm/app/models",
+		"/home/rayssa/www/sm/app/views",
+		"/home/rayssa/www/sm/app/views/signup",
+		"/home/rayssa/www/sm/public",
+		"/home/rayssa/www/sm/public/assets",
+		"/home/rayssa/www/sm/public/assets/js",
+		"/home/rayssa/www/sm/public/assets/lib",
+		"/home/rayssa/www/sm/public/assets/lib/bootstrap",
+		"/home/rayssa/www/sm/public/assets/lib/bootstrap/css"
 	],
 	"file_history":
 	[
-		"/home/rayssa/estagio/front/assets/js/autores.js",
-		"/home/rayssa/estagio/front/assets/js/funcionarios.js",
-		"/home/rayssa/estagio/front/funcionarios.html",
-		"/home/rayssa/estagio/front/assets/js/emprestimo.js",
 		"/home/rayssa/estagio/front/assets/vendor/bootstrap/css/style.css",
-		"/home/rayssa/estagio/front/livros.html",
-		"/home/rayssa/estagio/front/index.html",
 		"/home/rayssa/estagio/front/emprestimo.html",
-		"/home/rayssa/estagio/front/alunos.html",
-		"/home/rayssa/estagio/front/assets/js/livros.js",
-		"/home/rayssa/estagio/front/autores.html",
+		"/home/rayssa/www/sm/app/controllers/teste.html",
+		"/home/rayssa/www/sm/public/assets/vendor/bootstrap/css/style.css",
+		"/home/rayssa/www/sm/public/assets/lib/bootstrap/css/style.css",
+		"/home/rayssa/www/sm/app/views/signup/index.phtml",
+		"/home/rayssa/www/sm/app/controllers/SignupController.php",
+		"/home/rayssa/www/sm/app/views/index.phtml",
+		"/home/rayssa/www/sm/app/views/tela.html",
+		"/home/rayssa/www/sm/app/controllers/IndexController.php",
+		"/home/rayssa/www/sm/.gitignore",
+		"/home/rayssa/www/sm/.editorconfig",
+		"/home/rayssa/estagio/appSUS/assets/js/home.js",
+		"/home/rayssa/estagio/appSUS/assets/vendor/bootstrap/css/stylesus.css",
+		"/home/rayssa/estagio/front/index.html",
+		"/home/rayssa/estagio/appSUS/home.html",
+		"/home/rayssa/estagio/docker-compose.yml",
+		"/home/rayssa/estagio/docker/nginx/appsus.conf",
+		"/home/rayssa/estagio/front/funcionarios.html",
+		"/home/rayssa/estagio/appSUS/assets/js/globals.js",
+		"/home/rayssa/estagio/appSUS/assets/home.html",
+		"/home/rayssa/estagio/front/isjais",
+		"/home/rayssa/estagio/front/assets/js/home.html",
+		"/home/rayssa/estagio/front/assets/js/RevisaoAprendizado",
+		"/home/rayssa/estagio/front/assets/css/inicio.js",
+		"/home/rayssa/estagio/appSUS/vendor/inicio.html",
 		"/home/rayssa/estagio/front/assets/js/index.js",
-		"/home/rayssa/estagio/front/assets/js/globals.js",
+		"/home/rayssa/estagio/appSUS/vendor/bootstrap/css/stylesus.css",
+		"/home/rayssa/estagio/front/assets/js/inicio.js",
+		"/home/rayssa/estagio/appSUS/js/inicio.js",
+		"/home/rayssa/estagio/front/assets/js/emprestimo.js",
+		"/home/rayssa/estagio/front/assets/css/index.css",
+		"/home/rayssa/estagio/appSUS/vendor/inicio.js",
+		"/home/rayssa/estagio/front/assets/js/appsus.js",
+		"/home/rayssa/estagio/front/appsus.html",
+		"/home/rayssa/estagio/front/assets/js/livros.js",
+		"/home/rayssa/estagio/front/livros.html",
 		"/home/rayssa/estagio/front/assets/js/alunos.js",
+		"/home/rayssa/Desktop/RevisaoAprendizado.txt",
+		"/home/rayssa/estagio/front/assets/js/autores.js",
+		"/home/rayssa/estagio/front/autores.html",
+		"/home/rayssa/estagio/front/alunos.html",
+		"/home/rayssa/estagio/front/assets/js/funcionarios.js",
+		"/home/rayssa/estagio/front/assets/js/globals.js",
 		"/home/rayssa/estagio/front/assets/css/style.css",
 		"/home/rayssa/estagio/front/teste.html",
 		"/home/rayssa/Desktop/autores.html",
 		"/home/rayssa/Desktop/autores.js",
 		"/home/rayssa/Desktop/alunos.html",
 		"/home/rayssa/Desktop/alunos.js",
-		"/home/rayssa/estagio/docker-compose.yml",
 		"/home/rayssa/estagio/docker/nginx/front.conf",
 		"/home/rayssa/estagio/front/assets/vendor/index2.html",
 		"/home/rayssa/estagio/front/assets/livros.html",
@@ -394,7 +613,7 @@
 	],
 	"find":
 	{
-		"height": 106.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -408,97 +627,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<tr>\n      <th scope=\"row\">1</th>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>",
+			"/vendor/",
+			"stylesus.css",
+			"nomeAutor",
+			"person",
+			"nome",
+			"matriculaAluno",
+			"nome",
+			"nomeAutor",
+			"nomeMatricula",
+			"nomeAutor",
+			"nomeMatricula",
+			"nomeAutor",
+			"nomeMatricula",
+			"nomeAutor",
+			"nomeMatricula",
+			"nomeAutor",
+			"nomeMatricula",
+			"person",
+			"emprestimos",
+			"foreach",
+			"click",
+			"enter",
+			"model",
+			"class",
+			"model",
+			"event",
+			"enter",
+			"event",
+			"true",
+			"ture",
+			"nomeFuncionario",
+			"nomeAutor",
+			"nome",
+			"nomeAutor",
+			"nome",
+			"nomeMatricula",
+			"('')",
+			"click",
+			"nomeAutor",
+			"nomeMatricula",
+			"id_funcionario",
+			"nomeMatricula",
+			"nomedofuncionario",
+			");\n",
+			"nomeMatricula",
+			"matriculaAluno",
+			"nomeMatricula",
+			"nomeAutor",
+			"nomeMatricula",
+			"nomeAutor",
+			"idLivros",
+			"ifnot",
+			"matriculaAluno",
+			"nome",
+			"nomeAutor",
+			"nomeMatricula",
+			"nomeAutor",
+			"Livros_Livrosid",
+			"matriculaAluno",
+			"idLivros",
+			"autores",
+			"emprestimos",
+			"foreac",
+			"self.setdata",
+			"forEac",
+			"nome",
+			"Codigo",
+			"nome",
+			"nomeMatricula",
+			"codigos",
+			"matriculas",
+			"objEmprestimo",
+			"matriculas",
+			"autores",
+			"nomeMatricula",
+			"foreach",
+			"nome",
+			"nomeAutor",
+			"nomeMatricula",
+			"id_funcionario",
+			"id_Funcionario",
+			"idFuncionario",
+			"nomeFuncionario",
+			"data",
+			"Livros_Livrosid",
+			"add",
+			"click",
+			"add",
+			"person",
+			"personName",
+			"foreach",
+			"nomeEmprestimo",
+			"CodEmprestimo",
+			"autores",
+			"nomeAutor",
+			"nome",
+			"foreach",
+			"livros",
+			"nomeAutor",
+			"nomeEmprestimo",
+			"nomeAutor",
+			"emprestimos",
+			"autores",
+			"CodEmprestimo",
+			"alunos",
+			" self.emprestimos(),\n          function(secEditingAccount) {\n            return secEditingAccount.matriculaAluno() === self.Aluno_idAluno();\n          }\n        );\n        inserir.records.CodEmprestimo = secSearch.CodEmprestimo();",
+			"idLivro",
+			"self.livros.push",
+			"matriculas.push",
+			"emprestimos.push",
+			"/',",
+			"autores",
+			"nomeAutor",
+			"codEmprestimo",
+			"nomeAutor",
+			"forEach",
+			"nomeAutor",
+			"Livros",
+			"LIVROS",
+			"nomeAUTOR",
+			"global",
+			"objEmprestimo",
 			"function matriculaAluno(objEmprestimo){\n  var self = this;\n  // console.log(objAutor);\n  self.matriculaAluno = ko.observable(objEmprestimo.idAutor);\n  self.CodEmprestimo = ko.observable(objEmprestimo.CodEmprestimo);\n}",
 			"funcionarios",
 			"nome",
 			"noem",
-			"autor",
-			"funcionarios",
-			"autor",
-			"Nomefuncionario ",
-			"nomeAutor",
-			"emprestimo",
-			"funcionarios",
-			"emprestimo",
-			"nomeAutor",
-			"emprestimo",
-			"nome",
-			"nomeAutor",
-			"emprestimos",
-			"cargo",
-			"titulo",
-			"Autor_idAutor",
-			"livros",
-			"autor",
-			"livros",
-			"objLivro",
-			"idLivros",
-			"nomeAutor",
-			"autores",
-			"emprestimos",
-			"autores",
-			"moment",
-			"secEditingAccount",
-			"console",
-			"autor",
-			"cadastra",
-			"console.log",
-			"livros",
-			"nome",
-			"nomeAutor",
-			"nome",
-			"'http://localhost:81",
-			"idLivros",
-			"idAutor",
-			"objLivro",
-			"objAutor",
-			"Autor_idAutor",
-			"dataEmprestimo",
-			"Livros_Livrosid",
-			"matriculaAluno",
-			"idNome",
-			"objAlunos",
-			"observable",
-			"Alunos",
-			"set",
-			"Autor_idAutor",
-			"new id",
-			"new",
-			"idAutor",
-			"foreach",
-			"editing",
-			"});\n",
-			"if",
-			"ifnot",
-			"alunos",
-			"autor",
-			"nomeAutor",
-			"nome",
-			"autor",
-			"idNome",
-			"nome",
-			"livros",
-			"estagio",
-			"dataNasc",
-			"nome",
-			"nomeAutor",
-			"dataNasc",
-			"idAutor",
-			"objAutor",
-			"person",
-			"editar",
-			": nome",
-			"add",
-			"nomeAutor",
-			"setData",
-			"getConditions",
-			"join",
-			"jonn",
-			"strNome",
-			"protected",
-			"public",
-			"private",
-			"msg"
+			"autor"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -516,76 +772,148 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/js/livros.js",
+					"file": "/home/rayssa/www/sm/public/assets/lib/bootstrap/css/users.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3524,
+						"buffer_size": 473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								473,
+								473
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/rayssa/www/sm/app/views/users/users.phtml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								550,
+								550
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "emprestimo.html",
+					"buffer": 2,
+					"file": "/home/rayssa/www/sm/public/assets/js/users.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8075,
+						"buffer_size": 318,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2966,
-								2966
+								314,
+								314
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 772.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "livros.html",
+					"buffer": 3,
+					"file": "/home/rayssa/www/sm/public/assets/js/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5328,
+						"buffer_size": 994,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/js/index.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 994,
 						"regions":
 						{
 						},
@@ -593,12 +921,12 @@
 						[
 							[
 								0,
-								0
+								994
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -608,41 +936,170 @@
 					},
 					"stack_index": 3,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 3,
-					"file": "assets/js/emprestimo.js",
+					"buffer": 5,
+					"file": "/home/rayssa/www/sm/app/controllers/UsersController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4325,
+						"buffer_size": 127,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1312,
-								1312
+								127,
+								127
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/rayssa/www/sm/app/views/index.phtml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/rayssa/www/sm/app/views/signup/index.phtml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/home/rayssa/www/sm/public/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1440,
+								1440
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 294.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/rayssa/www/sm/app/layouts/index.phtml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 51,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -665,18 +1122,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -703,6 +1153,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"te",
+				"sm/app/controllers/testt"
+			],
+			[
+				".git",
+				"sm/.gitignore"
+			],
 			[
 				"index",
 				"public/index.php"
@@ -732,7 +1190,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
